@@ -1,0 +1,30 @@
+{
+  "name": "term-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "private": "true",
+  "dependencies": {
+    "@babel/preset-env": "^7.14.8",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.2.2",
+    "xterm": "^4.13.0",
+    "xterm-addon-fit": "^0.5.0",
+    "xterm-addon-web-links": "^0.4.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.14.8",
+    "eslint": "^7.31.0",
+    "eslint-config-google": "^0.14.0",
+    "webpack": "^5.46.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --env mode=$(grep NODE_ENV .env | cut -d '=' -f2)",
+    "watch": "webpack --watch --env mode=$(grep NODE_ENV .env | cut -d '=' -f2)",
+    "start": "npm start"
+  },
+  "author": "",
+  "license": "ISC"
+}
